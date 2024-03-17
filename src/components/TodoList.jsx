@@ -12,7 +12,7 @@ export default function TodoLists(props) {
 
             return <div className="List-items">
                 <h4 key={index}>{item}</h4>
-                <button onClick={deleteItem}>delete</button>
+                <button onClick={() => deleteItem(index)}>delete</button>
             </div>
         }
 
